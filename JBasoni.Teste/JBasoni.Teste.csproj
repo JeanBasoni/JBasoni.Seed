@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FBD7478-ABF1-42FA-AD4A-1D28BF9507C1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JBasoni.Seed</RootNamespace>
-    <AssemblyName>JBasoni.Seed</AssemblyName>
+    <ProjectGuid>{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JBasoni.Teste</RootNamespace>
+    <AssemblyName>JBasoni.Teste</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,14 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Componente\ReturnObject\IResponse.cs" />
-    <Compile Include="Componente\ReturnObject\Mensagem.cs" />
-    <Compile Include="Componente\ReturnObject\Response.cs" />
-    <Compile Include="Componente\ReturnObject\TipoDeMensagem.cs" />
-    <Compile Include="Componente\ReturnObject\VoidResponse.cs" />
-    <Compile Include="Comuns\Crud\IPropertyCrudBasico.cs" />
-    <Compile Include="Comuns\Crud\PropertyCrudBasico.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JBasoni.Seed\JBasoni.Seed.csproj">
+      <Project>{6fbd7478-abf1-42fa-ad4a-1d28bf9507c1}</Project>
+      <Name>JBasoni.Seed</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

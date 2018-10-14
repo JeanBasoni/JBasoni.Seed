@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBasoni.Seed", "JBasoni.Seed\JBasoni.Seed.csproj", "{6FBD7478-ABF1-42FA-AD4A-1D28BF9507C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JBasoni.Teste", "JBasoni.Teste\JBasoni.Teste.csproj", "{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6FBD7478-ABF1-42FA-AD4A-1D28BF9507C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FBD7478-ABF1-42FA-AD4A-1D28BF9507C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FBD7478-ABF1-42FA-AD4A-1D28BF9507C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBA0C8D-4EBA-4A98-8623-7F746A73A85A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
