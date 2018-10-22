@@ -47,7 +47,9 @@
     <Compile Include="Componente\ReturnObject\VoidResponse.cs" />
     <Compile Include="Comuns\Crud\IPropertyCrudBasico.cs" />
     <Compile Include="Comuns\Crud\PropertyCrudBasico.cs" />
+    <Compile Include="Comuns\Abstracao\ReadOnlyCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

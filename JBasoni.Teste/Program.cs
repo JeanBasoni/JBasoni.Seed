@@ -1,4 +1,5 @@
 ﻿using JBasoni.Seed.Componente.ReturnObject;
+using JBasoni.Seed.Comuns.Abstracao;
 using JBasoni.Seed.Comuns.Crud;
 using System;
 using System.Collections.Generic;
@@ -35,8 +36,15 @@ namespace JBasoni.Teste
 
     public class Pessoa: PropertyCrudBasico
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        public string Nome { get; protected set; }
+        public int Idade { get; protected set; }
+        public virtual ReadOnlyCollection<Telefone> Telefones { get; protected set; }
+        public void AdicionarTelefone(Telefone telefone)=>
+            Telefones.AddItem(telefone);
+        public void RemoverTelefone(Telefone telefone) =>
+            Telefones.RemoveItem(telefone);
+
+
 
         public Pessoa Criar(string nome, int idade)
         {
@@ -48,11 +56,17 @@ namespace JBasoni.Teste
 
         public VoidResponse Salvar()
         {
+
             var response = new VoidResponse();
             response.AddMensagem(TipoDeMensagem.Erro, "Erro ao tentar incluir Pessoa.");
 
             return response;
         }
 
+    }
+
+    public class Telefone : PropertyCrudBasico
+    {
+        public string Numero { get; set; }
     }
 }
